@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+  }
+  
+  
+  body{
+    background-color: #f5f6fa;
+  }
+  .app__header{
+    display: flex; /*pushes everythng into a row*/
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  
+  }
+  
+  .app{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+  }
+  .app__header > h1{
+    color:firebrick;
+  }
+  
+  .app__stats{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .app__dropdown{
+    background-color: white;
+  }
+  
+  .app__graphTitle{
+  margin-top: 20px;
+  }
+  
+  /* media query while screen lowers and hit the breakpoint of 990px do the conditions */
+  
+  @media ( max-width: 990px){
+    .app{
+      flex-direction: column;
+    }
+  }
+  .app__left{
+    /* use 90% of the screen  */
+    flex: 0.9;
+  
+    
+  }
+
+  .app_map{
+      flex: 100%;
+  }
